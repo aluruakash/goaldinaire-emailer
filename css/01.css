@@ -3,15 +3,12 @@
 		background-image: url('../img/conatct-bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-color: #fff;
-		opacity: .9;
-		background-size: cover;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
 	}
 	.content-row{
-		width: 600px;
+		width: 700px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 0px;
@@ -20,7 +17,7 @@
 	.container h1{
 		text-transform: uppercase;
 		text-align: center;
-		padding-bottom: 30px;
+		padding-bottom: 10px;
 		font-weight: bold;
 	}
 	.container img.logo-goal{
@@ -33,26 +30,32 @@
 		text-align: right;
 		display: block;
 		margin-right: 30px;
+		margin-top: 5px;
 		margin-bottom: 10px;
-		font-size:16px; 
+		font-size:16px;
 	}
 	input{
 		border:solid 3px #ccc;
 		border-radius:6px;
-		padding:10px 10px 7px 7px; 
+		padding:5px 8px; 
 		position: relative;
-		padding-right:120px; 
-		padding-left:50px; 
+		padding-right:75px;
+		padding-left:75px;
+		text-align: left;
+	}
+	input.radio1{
+		margin-top: 11px;
 	}
 	#p_package{
 		width: 100%;
 		border:solid 3px #ccc;
-		border-radius:6px; 
+		margin-top: 5px;
+		border-radius:5px;
 	}
 	textarea{
 		width: 100%;
 		border:solid 3px #ccc;
-		border-radius:6px; 
+		border-radius:6px;
 	}
 	.submit{
 		background-color: black;
@@ -68,29 +71,35 @@
 		background-color:#fff;
 		color:black;
 	}
+	input{
+		position: relative;
+	}
 	.ab{
       padding:7px;
-      border-radius:4px; 
+      border-radius:4px;
       position: absolute;
       left:0px;
-      right:150px;
+      right:20px;
       margin-left: auto;
       margin-right: auto;
-      width: 30px; 
+      width: 30px;
       line-height: 25px;
       z-index: 1;
       text-align: center;
 	}
-	.placeholder{
-		text-align: center;
-	}
 }
-@media(max-width: 1199px){
+@media(max-width: 767px){
 	.container{
 		width: 100%;
+		background-color: #999;
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.content-row{
-	
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.container img{
 		width: 20%;
@@ -98,39 +107,53 @@
 		left: 0px;
 		right: 20px;
 		margin-left: auto;
-		top:0px;
+		margin-left: auto;
+		top:3px;
 	}
 	.container h1{
 		font-size: 20px;
+		text-align: left;
 	}
 	label{
 		text-align: left;
 		display: block;
 		margin-right: 0px;
 		margin-bottom: 10px;
-		font-size:12px; 
+		font-size:12px;
 	}
 	input{
+		color: black;
 		width: 100%;
 		padding: 0;
 		border-radius:6px; 
 		text-align: center;
 		position: relative;	
 		margin-bottom: 15px;
-		border:solid 2px #ccc; 
+		border:solid 2px #ccc;
+		position: relative;
+	}
+	.radio1{
+		left: -100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	input{
+		position: relative;
 	}
 	.ab{
-      border-radius:4px; 
-      position: absolute;
-      left:0px;
-      right: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20px; 
-      line-height: 25px;
-      z-index: 1;
-      text-align: center;
-      padding:0;
+	    position: absolute;
+		color: black;
+	    border-radius:4px; 
+	    left: 0px;
+	    right: 90px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 20px;
+	    line-height: 25px;
+	    z-index: 1;
+	    text-align: center;
+	    padding:0;
+	    display: inline-block;
 	}
 	.submit{
 		background-color: black;
@@ -150,122 +173,161 @@
 	textarea{
 		border:solid 2px #ccc;
 		border-radius:6px; 
-	}
-	input.radio1{
-		border:solid 5px red;
-		margin-left: -100px;
+		width: 100%;
 	}
 }
 @media(min-width: 768px) and (max-width: 1199px){
+	.container{
+		width: 100%;
+		background-image: url(../img/conatct-bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-left: auto;
+		margin-right: auto;
+		color: black;
+	}
+	.content-row{
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container h1{
+		text-transform: uppercase;
+		text-align: center;
+		padding-bottom: 10px;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.container img.logo-goal{
+		width: 20%;
+		position: absolute;
+		left: 10px;
+		top:5px;
+	}
+	label{
+		text-align: right;
+		display: block;
+		margin-right: 30px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		font-size:16px;
+	}
+	input{
+		border:solid 3px #ccc;
+		border-radius:6px;
+		padding:5px 8px; 
+		position: relative;
+		padding-right:50px;
+		padding-left:50px;
+		text-align: left;
+		color: black;
+	}
+	input.radio1{
+		margin-top: 11px;
+	}
+	#p_package{
+		width: 100%;
+		border:solid 3px #ccc;
+		margin-top: 5px;
+		border-radius:5px;
+	}
+	textarea{
+		width: 100%;
+		border:solid 3px #ccc;
+		border-radius:6px;
+	}
+	.submit{
+		background-color: black;
+		color: #fff;
+		width: 100px;
+		line-height: 25px;
+		margin-top:40px; 
+		margin-bottom: 20px;
+		padding:5px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.submit:hover{
+		background-color:#fff;
+		color:black;
+	}
+	input{
+		position: relative;
+	}
 	.ab{
-      border-radius:4px; 
+      padding:7px;
+      border-radius:4px;
       position: absolute;
-      left:0px;
-      right: 0px;
+      left:15px;
+      right:0px;
       margin-left: auto;
       margin-right: auto;
-      width: 20px; 
+      width: 30px;
       line-height: 25px;
       z-index: 1;
       text-align: center;
-      padding:0;
-	}
-	.content-row{
-		margin-left: auto;
-		margin-right: auto;
-		width: 460px;
-	}
-	.container{
-		background-image: url('../img/conatct-bg.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #fff;
-		opacity: .9;
-		background-size: cover;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-	}
-	.container h1{
-		font-size: 30px;
-		text-align: center;
+      color: black;
 	}
 
 }
 
 
-@media(max-width: 767px){
+.footer{
+	position: relative;
+	background-color: black;
+	height: 80px;
+}
+.footer:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.footer p{
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	color: gray;
+}
+.footer .power-img{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	margin-right: auto;
+}
+
+@media(max-width: 1199px){
 	.footer{
 		position: relative;
-	}
-  img.power-img{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0px;
-    left: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 20px;
-  }
-  .footer{
-		position: relative;
-	}
-  .footer p{
-  	position: absolute;
-  	left: 50px;
-  	right: 0px;
-  	margin-left: auto;
-  	margin-right: auto;
-  	bottom: -60px;
-  	padding-bottom: 10px;
-  }
-}
-@media(min-width: 768px) and (max-width: 1199px){
-  .footer{
-		position: relative;
+		background-color: black;
+		height: 80px;
 	}
 	.footer:after{
 		content: "";
 		clear: both;
 		display: block;
 	}
-  img.power-img{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .footer p{
-  	position: absolute;
-  	left: 220px;
-  	right: 0px;
-  	margin-left: auto;
-  	margin-right: auto;
-  	bottom: -60px;
-  	padding-bottom: 10px;
-  }
-}
-@media(min-width: 1200px){
-	.footer{
-		position: relative;
+	.footer p{
+		position: absolute;
+		bottom: 10px;
+		right: 0px;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		color: gray;
+		width: 160px;
 	}
-  img.power-img{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-  }
-  .footer p{
-  	position: absolute;
-  	right: 25px;
-  	bottom: 10px;
-  	margin-right: auto;
-  }
+	.footer .power-img{
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		bottom: 17px;
+		right: 0px;
+		left: 150px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 
