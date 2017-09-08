@@ -191,3 +191,8 @@ footer h3{
     margin-top: -30px;
   }
 }
+
+.map{
+  margin-left: auto;
+  margin-right: auto;
+}
